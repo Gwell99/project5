@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    </head>
+    <body>
+
+
+        <h1>How should I get home tonight?</h1>
+
+         <p class= 'disclaimer'>*This quiz acts as a recommendation and should be taken with discretion*</p> 
+
+        <!-- onchange="showValue(this)" -->             
+
+        <form class='form' name = "question">
+            <div class='question_container'>
+                <p class="question">Do you have much money to spend? </p> 
+                <input id="Q1" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>< $5</p>
+                    <p class='middle'>$25</p>
+                    <p class='end'>$35 ></p>
+                </div>
+            </div>
+
+            <div class='question_container'>
+                <p class="question">Is it late?</p> 
+                <input id="Q2" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>7 PM</p>
+                    <p class='middle'>12 AM</p>
+                    <p class='end'>5 AM</p>
+                </div>
+            </div>
+
+
+            <div class='question_container'>
+                <p class="question">How populated is your neighborhood? </p> 
+                <input id="Q3" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>Ghost Town</p>
+                    <p class='end'>Bustling 24/7</p>
+                </div>
+            </div>
+
+            <div class='question_container'>
+                <p class="question">Are you feminine presenting? </p> 
+                <input id="Q4" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>Very Feminine</p>
+                    <p class='end'>Very Masculine</p>
+                </div>
+            </div>
+
+            <div class='question_container'>
+                <p class="question">How are you dressed? </p> 
+                <input id="Q5" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>Scantily Clad</p>
+                    <p class='end'>Covered Head to Toe</p>
+                </div>
+            </div>
+
+            <div class='question_container'>
+                <p class="question">What battery is your phone at? </p> 
+                <input id="Q6" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>0%</p>
+                    <p class='middle'>50%</p>
+                    <p class='end'>100%</p>
+                </div>
+            </div>
+
+
+            <div class='question_container'>
+                <p class="question">How far is your destination? </p> 
+                <input id="Q7" input type="range" name="question" min="0" max="100" value="0" class="slider" step="1"  />
+                <div class='spaced_range'>
+                    <p class='start'>1 mi</p>
+                    <p class='middle'>5 mi</p>
+                    <p class='end'>10 mi +</p>
+                </div>
+            </div>
+
+        <p class= 'description'>Check the box below if any of the following statements are true:</p> 
+
+            <div class='question_container_flexed'>
+                <p class="question">I am not able-bodied</p> 
+                <input id="Q8" input type="checkbox" name="question" min="0" max="100" value="0" class="checkbox" />
+            </div>
+
+            <div class='question_container_flexed'>
+                <p class="question">I do not have any personal protection</p> 
+                <input id="Q9" input type="checkbox" name="question" min="0" max="100" value="0" class="checkbox" />
+            </div>
+
+            <div class='question_container_flexed'>
+                <p class="question">I am alone</p> 
+                <input id="Q10" input type="checkbox" name="question" min="0" max="100" value="0" class="checkbox" />
+            </div>
+
+
+        </form>
+
+
+
+        <button id="generate">Generate Results</button>
+
+
+
+        <div id = "results"></div>
+        <p class="results" id = "answer"></p> 
+
+<div id = "pictures">
+    
+
+</div>
+
+
+        <img src="uber.jpg" class= "img" id = "uberPic" hidden>
+        <img src="walk.jpg" class= "img" id = "walkPic" hidden>
+        <img src="subway.jpg" class= "img" id = "subwayPic" hidden>
+
+
+        <script src="script.js"></script>
+
+
+
+
+
+    </body>
+</html>
